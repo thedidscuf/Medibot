@@ -1,0 +1,68 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MediBot - Asistente Médico IA</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+<body>
+  <div class="medical-chat-container">
+    <div class="chat-interface">
+      <div class="chat-header">
+        <div class="bot-avatar">
+          <svg viewBox="0 0 100 100" class="android-head">
+            <circle cx="50" cy="50" r="45" fill="#3498db" />
+            <circle cx="35" cy="40" r="5" fill="#ffffff" />
+            <circle cx="65" cy="40" r="5" fill="#ffffff" />
+            <path d="M30,60 Q50,75 70,60" stroke="#ffffff" stroke-width="3" fill="none" />
+          </svg>
+        </div>
+        <h2>MediBot</h2>
+        <div class="header-actions">
+          <button class="new-chat-btn" title="Nuevo Chat">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+              <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" fill="#ffffff"/>
+            </svg>
+          </button>
+          <button class="chat-history-btn" title="Historial de Chats">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+              <path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L8 12H5c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z" fill="#ffffff"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="chat-messages">
+        <!-- Messages will be dynamically added here -->
+      </div>
+      <div class="chat-input">
+        <input type="text" placeholder="Haz una pregunta médica...">
+        <label class="file-upload">
+          <input type="file" accept=".pdf,.doc,.docx,.jpg,.png" style="display: none;">
+          <svg viewBox="0 0 24 24" width="24" height="24">
+            <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" fill="#3498db"/>
+          </svg>
+        </label>
+        <button>Enviar</button>
+      </div>
+    </div>
+    <div class="medical-background">
+      <svg class="ekg-line" viewBox="0 0 200 50">
+        <path d="M0,25 Q25,10 50,25 T100,25 T150,25 T200,25" 
+              stroke="#3498db" stroke-width="2" fill="none" />
+      </svg>
+    </div>
+    <div class="uploaded-files"></div>
+  </div>
+
+  <div class="chat-history-modal" style="display: none;">
+    <div class="chat-history-content">
+      <h3>Historial de Chats</h3>
+      <div class="chat-history-list"></div>
+      <button class="close-history-btn">Cerrar</button>
+    </div>
+  </div>
+</body>
+</html>
