@@ -1,6 +1,6 @@
 export class AIService {
   constructor() {
-    this.API_KEY = 'sk-or-v1-10ce6793ff07682191341efe62685fea97d257dd46659a13d9da07ba5a3ee8bcyy';
+    this.API_KEY = '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';
     this.BASE_URL = 'https://openrouter.ai/api/v1';
     this.conversationHistory = [
       {
