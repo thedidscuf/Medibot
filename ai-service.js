@@ -1,6 +1,6 @@
 export class AIService {
   constructor() {
-    this.API_KEY = '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';
+    this.API_KEY = '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';
     this.BASE_URL = 'https://openrouter.ai/api/v1';
     this.conversationHistory = [
       {
@@ -64,7 +64,7 @@ IMPORTANTE:
 - En casos graves, recomienda atención médica inmediata`
       }
     ];
-    this.models = ['google/gemini-2.0-flash-lite-preview-02-05:free']; // Volvemos a usar deepseek
+    this.models = ['google/gemini-2.0-flash-lite-preview-02-05:free']; 
     this.currentModelIndex = 0;
   }
 
